@@ -1,3 +1,4 @@
-FROM openjdk:11-jre-slim
-COPY target/myapp.jar /app/myapp.jar
-ENTRYPOINT ["java", "-jar", "/app/myapp.jar"]
+FROM nginx:1.14.2
+LABEL autor="manuel ezquerra"
+LABEL version="1.0"
+EXPOSE 80
